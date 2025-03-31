@@ -31,9 +31,6 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-ol, ul {
-	list-style: none;
-}
 blockquote, q {
 	quotes: none;
 }
@@ -50,18 +47,57 @@ table {
 /* END CSS RESET*/
 
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     background-color: rgb(20, 20, 20);
     color: white;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.home {
+	width: 50vw;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.home h1 {
+	padding-bottom: 2rem;
+}
+
+.recipe {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	width: 50vw;
+	text-align: left;
+	margin: 0 auto;
 }
 
 h1 {
-    font-size: 5rem;
-    padding-bottom: 2rem;
+    font-size: 3rem;
+}
+
+.recipes {
+	list-style-type: none;
 }
 
 .recipes li {
     color: white;
+}
+
+.steps li, .ingredients li {
+	padding: 3px 0;
+}
+
+:link {
+	color:rgb(182, 182, 255);
+	text-decoration: none;
+	font-size: 2rem;
+}
+
+img {
+	width: 20rem;
+	height: auto;
+}
+
+ol, ul {
+	list-style-position: inside;
 }
